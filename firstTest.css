@@ -1,0 +1,24 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: darkslategray;
+    width: 970px;
+}
+section {
+    background-color: whitesmoke;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+hr {
+    color: black;
+    width: 80%;
+    margin-left: 10%;
+}
+footer {
+    height: 25px;
+    width: 100%;
+}
