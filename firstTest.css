@@ -22,3 +22,6 @@ footer {
     height: 25px;
     width: 100%;
 }
+.showtest>.example, .slidedown>.example, .slidetoggle>.example, .fadein>.example {
+    display: none;
+}

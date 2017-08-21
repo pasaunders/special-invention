@@ -11,7 +11,65 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">
-    
+        $(document).ready(function(){
+            $('.clicktest > input').click(function(){
+                alert("click found");
+            });
+            $('.hidetest > input').click(function(){
+                $('.hidetest').hide()
+            });
+            $('.showtest > input').click(function(){
+                $('.showtest > .example').show();
+            });
+            $('.toggletest > input').click(function(){
+                $('.toggletest > .example').toggle();
+            });
+            $('.slidedown > input').click(function(){
+                $('.slidedown > .example').slideDown();
+            });
+            $('.slideup > input').click(function(){
+                $('.slideup > .example').slideUp();
+            });
+            $('.slidetoggle > input').click(function(){
+                $('.slidetoggle > .example').slideToggle();
+            });
+            $('.fadein > input').click(function(){
+                $('.fadein > .example').fadeIn();
+            });
+            $('.fadeout > input').click(function(){
+                $('.fadeout > .example').fadeOut();
+            });
+            $('.addclass > input').click(function(){
+                $('.addclass > .example').addClass('added');
+                console.log('class added');
+            });
+            $('.before > input').click(function(){
+                $('.before > .example').before("<p>before</p>");
+            });
+            $('.after > input').click(function(){
+                $('.after > .example').after('<p>after</p>');
+            });
+            $('.append > input').click(function(){
+                $('.append > .example > p').append(' appended');
+            });
+            $('.html > input').click(function(){
+                console.log($('.html > .example').html());
+                $('.html > .example').html('<p>different text</p>');
+            });
+            $('.attr > input').click(function(){
+                console.log($('.attr > .example').attr());
+            });
+            $('.val > input').click(function(){
+                console.log($('.val > .example').val());
+            });
+            $('.text > input').click(function(){
+                console.log($('.text > .example > li').text());
+            });
+            $('.data > input').click(function(){
+                $('.data > .example').data("foo", "bar");
+                console.log($('.data > .example').data())
+            });
+        });
     </script>
 </head>
 <body>
@@ -24,151 +82,148 @@
         <hr>
     </section>
     <section class="hidetest">
-        <input type="submit" value="Click">
+        <input type="submit" value="Hide">
         <article class="example">
-            <h1>Click</h1>
+            <h1>Hide</h1>
             <p>there is some text here</p>
         </article>
         <hr>
     </section>
     <section class="showtest">
-        <input type="submit" value="Click">
+        <input type="submit" value="Show">
         <article class="example">
-            <h1>Click</h1>
+            <h1>Show</h1>
             <p>there is some text here</p>
         </article>
         <hr>
     </section>
     <section class="toggletest">
-        <input type="submit" value="Click">
+        <input type="submit" value="toggle">
         <article class="example">
-            <h1>Click</h1>
-            <p>there is some text here</p>
-        </article>
-        <hr>
-    </section>
-    <section class="">
-        <input type="submit" value="Click">
-        <article class="example">
-            <h1>Click</h1>
+            <h1>toggle</h1>
             <p>there is some text here</p>
         </article>
         <hr>
     </section>
     <section class="slidedown">
-        <input type="submit" value="Click">
+        <input type="submit" value="slide">
         <article class="example">
-            <h1>Click</h1>
+            <h1>slide</h1>
             <p>there is some text here</p>
         </article>
         <hr>
     </section>
     <section class="slideup">
-        <input type="submit" value="Click">
+        <input type="submit" value="slide">
         <article class="example">
-            <h1>Click</h1>
+            <h1>slide</h1>
             <p>there is some text here</p>
         </article>
         <hr>
     </section>
     <section class="slidetoggle">
-        <input type="submit" value="Click">
+        <input type="submit" value="stoggle">
         <article class="example">
-            <h1>Click</h1>
+            <h1>stoggle</h1>
             <p>there is some text here</p>
         </article>
         <hr>
     </section>
     <section class="fadein">
-        <input type="submit" value="Click">
+        <input type="submit" value="fadein">
         <article class="example">
-            <h1>Click</h1>
+            <h1>fade</h1>
             <p>there is some text here</p>
         </article>
         <hr>
     </section>
     <section class="fadeout">
-        <input type="submit" value="Click">
+        <input type="submit" value="fadeout">
         <article class="example">
-            <h1>Click</h1>
+            <h1>fade</h1>
             <p>there is some text here</p>
         </article>
         <hr>
     </section>
     <section class="addclass">
-        <input type="submit" value="Click">
+        <input type="submit" value="addClass">
         <article class="example">
-            <h1>Click</h1>
+            <h1>addClass</h1>
             <p>there is some text here</p>
         </article>
         <hr>
     </section>
     <section class="before">
-        <input type="submit" value="Click">
+        <input type="submit" value="before">
         <article class="example">
-            <h1>Click</h1>
+            <h1>before</h1>
             <p>there is some text here</p>
         </article>
         <hr>
     </section>
     <section class="after">
-        <input type="submit" value="Click">
+        <input type="submit" value="after">
         <article class="example">
-            <h1>Click</h1>
+            <h1>after</h1>
             <p>there is some text here</p>
         </article>
         <hr>
     </section>
     <section class="append">
-        <input type="submit" value="Click">
+        <input type="submit" value="append">
         <article class="example">
-            <h1>Click</h1>
+            <h1>append</h1>
             <p>there is some text here</p>
         </article>
         <hr>
     </section>
     <section class="html">
-        <input type="submit" value="Click">
+        <input type="submit" value="html">
         <article class="example">
-            <h1>Click</h1>
+            <h1>html</h1>
             <p>there is some text here</p>
         </article>
         <hr>
     </section>
     <section class="attr">
-        <input type="submit" value="Click">
+        <input type="submit" value="attr">
         <article class="example">
-            <h1>Click</h1>
+            <h1>attr</h1>
             <p>there is some text here</p>
         </article>
         <hr>
     </section>
     <section class="val">
-        <input type="submit" value="Click">
+        <input type="submit" value="val">
         <article class="example">
-            <h1>Click</h1>
+            <h1>val</h1>
+            <input type="textarea" name="testinput" value="text here">
             <p>there is some text here</p>
         </article>
         <hr>
     </section>
     <section class="text">
-        <input type="submit" value="Click">
+        <input type="submit" value="text">
         <article class="example">
-            <h1>Click</h1>
+            <h1>text</h1>
             <p>there is some text here</p>
+            <ul>
+                <li>text</li>
+                <li>text2</li>
+            </ul>
         </article>
         <hr>
     </section>
     <section class="data">
-        <input type="submit" value="Click">
+        <input type="submit" value="data">
         <article class="example">
-            <h1>Click</h1>
+            <h1>data</h1>
             <p>there is some text here</p>
         </article>
         <hr>
     </section>
+    <footer>
+        
+    </footer>
 </body>
-<footer>
-    
-</footer>
 </html>
